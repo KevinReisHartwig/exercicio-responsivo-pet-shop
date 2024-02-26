@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e7e6e5;
+}
+
+header{
+    padding: 12px 0;
+    color: white;
+    background-color: rgb(58, 58, 230);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 1.2em;
+}
+
+header nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font: bold;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    
+}
+
+header > .container,
+section > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container{
+    align-items: flex-start;  
+}
+
+section{
+    padding: 24px 0;
+    color: #fffbfb;
+}
+
+section h2{
+    width: 100%; 
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    color: rgb(58, 58, 230);
+    border-bottom: solid 2px rgb(58, 58, 230);
+    
+}
+
+section p{
+    color: black;
+    margin-bottom: 8px;
+    padding-top: 15px;
+    width: 100%; 
+}
+
+.store-front{
+    margin-right: 32px;
+    height: 300px;
+    width: 400px;
+}
+
+.button-style:hover {
+    border-bottom: solid 2px #ffffff;
+    
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    gap: 2%;
+}
+
+.produto-central img{
+    border-radius: 4px;
+}
+
+.produto-central h3{
+    color: black;
+}
+
+.produto-central p, .produto-central img, .produto-central button{
+    width: 240px; 
+
+}
+
+button {
+margin-bottom: 8px;
+padding: 8px;
+background-color: rgb(58, 58, 230);
+border: solid 1px rgb(58, 58, 230);
+color: white;
+font-size: 1em;
+cursor: pointer;
+border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgb(101, 101, 246);
+}
+
+@media screen and (max-width: 640px){
+
+    .container{
+        max-width: 80%;
+    }
+
+    .store-front{
+        height: 300px;
+        width: 300px;
+        padding-bottom: 16px;
+    }
+
+    .container-grid{
+        display: block;
+    }
+
+    section > .container{
+    display: block;
+    }
+
+    .produto-central{
+        width: 100%;
+
+    }
+
+    .produto-central p, .produto-central img, .produto-central button{
+        width: 100%; 
+    
+    }
+
+    .produto-central{
+        padding-bottom: 16px;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 80%;
+    }
+
+    .store-front{
+        padding-bottom: 16px;
+        width: 100%;
+    }
+
+    .container-grid{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 3%;
+    }
+
+    section > .container{
+    display: block;
+    }
+
+    .produto-central p, .produto-central img, .produto-central button{
+        width: 315px; 
+    
+    }
+
+}
+
+
+
+
+
+
+
+
